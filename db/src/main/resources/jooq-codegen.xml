@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://www.jooq.org/xsd/jooq-codegen-3.14.0.xsd">
+    <generator>
+        <generate>
+            <pojos>true</pojos>
+            <pojosEqualsAndHashCode>true</pojosEqualsAndHashCode>
+            <javaTimeTypes>true</javaTimeTypes>
+            <fluentSetters>true</fluentSetters>
+            <generatedAnnotation>true</generatedAnnotation>
+            <generatedAnnotationType>DETECT_FROM_JDK</generatedAnnotationType>
+            <generatedAnnotationDate>true</generatedAnnotationDate>
+            <nullableAnnotation>true</nullableAnnotation>
+            <nullableAnnotationType>org.jetbrains.annotations.Nullable</nullableAnnotationType>
+            <nonnullAnnotation>true</nonnullAnnotation>
+            <nonnullAnnotationType>org.jetbrains.annotations.NotNull</nonnullAnnotationType>
+            <jpaAnnotations>false</jpaAnnotations>
+            <validationAnnotations>false</validationAnnotations>
+            <springAnnotations>true</springAnnotations>
+            <constructorPropertiesAnnotation>true</constructorPropertiesAnnotation>
+            <constructorPropertiesAnnotationOnPojos>true</constructorPropertiesAnnotationOnPojos>
+            <constructorPropertiesAnnotationOnRecords>true</constructorPropertiesAnnotationOnRecords>
+        </generate>
+    </generator>
+</configuration>

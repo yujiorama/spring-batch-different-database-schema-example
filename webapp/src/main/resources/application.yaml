@@ -1,0 +1,15 @@
+spring.main:
+  banner-mode: off
+  web-application-type: servlet
+spring.datasource:
+  name: demo
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: app
+  password: app
+spring.flyway:
+  enabled: true
+  create-schemas: true
+  default-schema: demo
+  schemas:
+    - demo

@@ -1,0 +1,22 @@
+logging.level:
+  org.springframework: INFO
+  org.jooq: INFO
+  com.example: INFO
+spring.main:
+  banner-mode: off
+  web-application-type: none
+spring.datasource:
+  name: demo
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/postgres
+  username: app
+  password: app
+spring.flyway:
+  enabled: false
+  create-schemas: false
+  default-schema: demo
+  schemas:
+    - demo
+spring.batch:
+  job.enabled: true
+  initialize-schema: always
