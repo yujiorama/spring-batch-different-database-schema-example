@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   webapp:
-    image: webapp
+    image: com.example/webapp
     depends_on:
       - db
     ports:
@@ -14,7 +14,7 @@ services:
       SPRING_DATASOURCE_USERNAME: app
       SPRING_DATASOURCE_PASSWORD: app
   batch:
-    image: batch
+    image: com.example/batch
     depends_on:
       - webapp
       - db

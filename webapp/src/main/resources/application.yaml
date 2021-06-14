@@ -1,3 +1,10 @@
+#spring.config:
+#  activate.on-profile: default
+logging.level:
+  org.springframework: INFO
+  org.jooq: INFO
+  org.flyway: INFO
+  com.example: DEBUG
 spring.main:
   banner-mode: off
   web-application-type: servlet
@@ -7,9 +14,16 @@ spring.datasource:
   url: jdbc:postgresql://localhost:5432/postgres
   username: app
   password: app
+  schema:
+    - classpath:db/schema/batchdemo.sql
+  schema-username: app
+  schema-password: app
+  initialization-mode: always
 spring.flyway:
   enabled: true
   create-schemas: true
   default-schema: demo
   schemas:
     - demo
+spring.jooq:
+  sql-dialect: postgres

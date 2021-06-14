@@ -1,24 +1,10 @@
 spring.config:
   activate.on-profile: test
 logging.level:
-  org.springframework: INFO
+  org.springframework: DEBUG
   org.jooq: DEBUG
   org.flyway: DEBUG
   com.example: DEBUG
 spring.datasource:
-  name: demo
   driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
   url: jdbc:tc:postgresql:12.4-alpine:///db
-  username: app
-  password: app
-spring.flyway:
-  enabled: true
-  create-schemas: true
-  default-schema: demo
-  schemas:
-    - demo
-spring.jooq:
-  sql-dialect: postgres
-spring.batch:
-  job.enabled: true
-  initialize-schema: always
