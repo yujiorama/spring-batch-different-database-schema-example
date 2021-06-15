@@ -1,4 +1,4 @@
-# spring-batch-separate-datasource-example
+# spring-batch-different-database-schema-example
 
 ## モチベーション
 
